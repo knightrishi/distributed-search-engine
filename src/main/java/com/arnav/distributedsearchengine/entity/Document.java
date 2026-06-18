@@ -4,6 +4,11 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+// Ye entity crawled webpages ko represent karti hai.
+// Hibernate ORM is class ko documents table se map karta hai.
+// Har object ek crawled webpage ka URL, title, HTML content aur status store karta hai.
+
+
 @Entity
 @Table(name = "documents")
 @Data
