@@ -5,6 +5,7 @@ import com.arnav.distributedsearchengine.repository.DocumentRepository;
 import org.jsoup.Jsoup;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 @Service
 public class CrawlerService {
@@ -27,5 +28,8 @@ public class CrawlerService {
 
 
         }
-
+//download a webpage and return the Jsoup Document object without saving anything to the database.
+    public org.jsoup.nodes.Document fetchPage(String url) throws Exception {
+            return Jsoup.connect(url).get();
+    }
 }
