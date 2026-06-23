@@ -29,7 +29,7 @@ public class BfsCrawlerService {
     public void crawlSite( String seedUrl, int limit) throws Exception {
         queue.add(seedUrl);
         while(!queue.isEmpty() && visited.size() < limit){
-            String currentUrl = queue.poll();
+            String currentUrl = queue.poll();//contains next branches of seed ur
 
             if (visited.contains(currentUrl))
                 continue;
@@ -41,7 +41,7 @@ public class BfsCrawlerService {
 
             crawlerService.crawl(currentUrl);
 
-            Elements links = page.select("a[href]");
+            Elements links = page.select("a[href]"); //links is a collection of all <a> tags
 
             for (Element link : links) {
 
