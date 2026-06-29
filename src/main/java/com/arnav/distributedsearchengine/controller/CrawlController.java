@@ -1,6 +1,6 @@
 package com.arnav.distributedsearchengine.controller;
 
-import com.arnav.distributedsearchengine.crawler.CrawlerService;
+import com.arnav.distributedsearchengine.services.CrawlerService;
 import com.arnav.distributedsearchengine.entity.Document;
 import org.springframework.web.bind.annotation.*;
 

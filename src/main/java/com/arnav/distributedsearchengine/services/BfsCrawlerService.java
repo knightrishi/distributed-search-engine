@@ -1,20 +1,16 @@
-package com.arnav.distributedsearchengine.crawler;
+package com.arnav.distributedsearchengine.services;
 
 
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 import org.jsoup.nodes.Element;
-import java.time.LocalDateTime;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
-import java.util.concurrent.LinkedBlockingQueue;
 
 //Manage queue -> Extract links -> Crawl MANY pages
 @Service

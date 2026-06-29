@@ -1,4 +1,4 @@
-package com.arnav.distributedsearchengine.crawler;
+package com.arnav.distributedsearchengine.services;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

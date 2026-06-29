@@ -1,6 +1,6 @@
 package com.arnav.distributedsearchengine.controller;
 
-import com.arnav.distributedsearchengine.crawler.BfsCrawlerService;
+import com.arnav.distributedsearchengine.services.BfsCrawlerService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

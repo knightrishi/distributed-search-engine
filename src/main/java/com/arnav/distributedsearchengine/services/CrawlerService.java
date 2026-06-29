@@ -1,11 +1,10 @@
-package com.arnav.distributedsearchengine.crawler;
+package com.arnav.distributedsearchengine.services;
 
 import com.arnav.distributedsearchengine.entity.Document;
 import com.arnav.distributedsearchengine.repository.DocumentRepository;
 import org.jsoup.Jsoup;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
 @Service
 public class CrawlerService {
