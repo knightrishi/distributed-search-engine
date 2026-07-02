@@ -1,8 +1,10 @@
 package com.arnav.distributedsearchengine.services;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class ParsedContent {
     private final String title;
     private final String content;

@@ -1,8 +1,11 @@
 package com.arnav.distributedsearchengine.services;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Set;
 
+@Service
 public class StopWordService {
     public static final Set<String> STOP_WORDS=Set.of(
             "a", "an", "the", "is", "are", "am", "was", "were",
