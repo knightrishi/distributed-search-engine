@@ -14,6 +14,8 @@ public class TokenizerService {
 
         if(text== null || text.isBlank()) return List.of();
 
-        return Arrays.stream(text.toLowerCase().replaceAll("[^a-zA-Z0-9]", "").split("\\+s")).filter(word->!word.isBlank()).toList();
+        return Arrays.stream(text.toLowerCase()
+                .replaceAll("[^a-zA-Z0-9\\s]", "")
+                .split("\\s+")).filter(word->!word.isBlank()).toList();
     }
 }
