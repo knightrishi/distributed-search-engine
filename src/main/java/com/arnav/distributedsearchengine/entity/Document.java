@@ -22,6 +22,9 @@ public class Document {
 
     private String title;
 
+    @Column(nullable = false)
+    private boolean isIndexed = false;
+
     @Lob
     @Column(columnDefinition = "LONGTEXT")
     private String htmlContent;
