@@ -53,6 +53,8 @@ public class IndexingService {
 //        System.out.println(parsedContent.getContent());
 //        System.out.println(tokens);
         saveIndex(document,frequencyMap);
+
+        document.setWordCount(tokens.size());
         document.setIndexed(true);
         documentRepository.save(document);
 

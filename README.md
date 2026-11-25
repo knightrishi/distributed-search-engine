@@ -180,12 +180,17 @@ The architecture is intentionally modular so each component can be deployed inde
 This design allows the search engine to scale from a single-node application to a distributed search platform.
 
 ---
+## 🛠️ Current Developments
 
+- Implemented the **BM25** ranking algorithm.
+- Chose BM25 over raw term frequency and classic TF-IDF because it solves two major ranking flaws:
+  - **Term-frequency saturation ($k_1$):** In TF-IDF, repeating a keyword 100 times keeps inflating the score. BM25 caps that gain asymptotically, preventing keyword stuffing from outranking genuinely relevant pages.
+  - **Document length normalization ($b$):** Long pages naturally accumulate more word matches. BM25 normalizes each document's length against the average document length so short, focused pages aren't unfairly buried by huge articles.
+- On top of that, it retains **IDF** so rare query terms carry more weight than common ones, which is why BM25 is the default lexical ranking standard in Lucene and Elasticsearch.
 ## 🔮 Future Improvements
 
 - Multi-threaded distributed crawler.
 - URL deduplication using Bloom Filters.
-- TF-IDF / BM25 ranking algorithm.
 - PageRank integration.
 - Elasticsearch support for distributed indexing.
 - Kafka-based crawling and indexing pipeline.
