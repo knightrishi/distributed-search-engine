@@ -10,5 +10,5 @@ import lombok.Setter;
 public class SearchResult {
     private String title;
     private String url;
-    private int score;
+    private double score;
 }
