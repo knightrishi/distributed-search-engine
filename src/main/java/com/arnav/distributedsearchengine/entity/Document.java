@@ -32,4 +32,5 @@ public class Document {
     private String status;
 
     private LocalDateTime crawledAt;
+    private int wordCount;
 }
