@@ -11,7 +11,7 @@ export const searchEngineApi = {
   },
 
   triggerCrawl: async (seedUrl) => {
-    const res = await fetch(`${BASE_URL}/crawl?seedUrl=${encodeURIComponent(seedUrl)}`, {
+    const res = await fetch(`${BASE_URL}/crawl?url=${encodeURIComponent(seedUrl)}`, {
       method: 'POST',
     });
     if (!res.ok) {
