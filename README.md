@@ -180,7 +180,7 @@ The architecture is intentionally modular so each component can be deployed inde
 This design allows the search engine to scale from a single-node application to a distributed search platform.
 
 ---
-## Current Developments
+## 🛠️ Current Developments
 
 - Implemented the **BM25** ranking algorithm.
 - Chose BM25 over raw term frequency and classic TF-IDF because it solves two major ranking flaws:
